@@ -116,10 +116,7 @@ const noWinner = () =>{
   msgContaner.classList.remove("hide");
   disableBoxes();
 };
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js")
-    .then(() => console.log("Service Worker registered"));
-}
+
 
 newGameBtn.addEventListener("click",resetGame);
 resetBtn.addEventListener("click",resetGame);
